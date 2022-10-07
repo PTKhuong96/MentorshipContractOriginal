@@ -1,0 +1,14 @@
+[workspace]
+members = ["contracts/*"]
+
+[profile.release.package.mentorship-contract-service]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+rpath = false
+lto = true
+overflow-checks = true
+opt-level = 'z'
+debug = false
+debug-assertions = false
